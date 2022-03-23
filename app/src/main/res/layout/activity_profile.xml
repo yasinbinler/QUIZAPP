@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arka"
+    tools:context=".Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="337dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/arkaplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="111dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.384"
+            app:srcCompat="@drawable/profil" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="31dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/isim" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mail" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="Yasin"
+            android:textColor="@color/Black"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="42dp"
+            android:text="yb06@gmail.com"
+            android:textColor="@color/Black"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="PROFİLİM"
+        android:textSize="35dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMenuP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:onClick="showPopup"
+
+        android:background="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCık"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/off"
+
+        android:onClick="showPopup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/essonuc"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fonz"
+        android:layout_marginTop="8dp"
+        android:text="Eş testi sonucu"
+        android:clickable="true"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/zekasonuc"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fonz"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Zeka testi sonucu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/essonuc" />
+
+    <Button
+        android:id="@+id/zenginsonuc"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fonz"
+        android:layout_marginTop="8dp"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:text="Zengin olsan testi sonucu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zekasonuc"
+        tools:layout_editor_absoluteX="160dp" >
+
+    </Button>
+
+    <Button
+        android:id="@+id/kisiliksonuc"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fonz"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="kişilik testi sonucu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zenginsonuc" />
+
+    <Button
+        android:id="@+id/renksonuc"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:background="@drawable/fonz"
+        android:layout_marginTop="8dp"
+        android:text="Ruhun hangi renk testi sonucu"
+        android:gravity="left|center"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kisiliksonuc"
+        tools:layout_editor_absoluteX="160dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

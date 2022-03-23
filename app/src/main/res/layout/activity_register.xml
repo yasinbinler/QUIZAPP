@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:background="@layout/rounded_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ad Soyad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="E-Mail"
+        android:background="@layout/rounded_border"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Şifre"
+        android:background="@layout/rounded_border"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
+    <EditText
+        android:id="@+id/passwordretry"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Şifre(Tekrar)"
+        android:background="@layout/rounded_border"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordretry" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Kayıt Ol"
+        android:textColor="@color/Black"
+        android:textSize="35dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

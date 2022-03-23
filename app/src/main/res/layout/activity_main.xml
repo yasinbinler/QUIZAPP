@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/layo1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        android:id="@+id/textVi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="QUIZ"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textVie"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <TextView
+        android:id="@+id/textVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="8dp"
+        android:text="'e Hoş Geldiniz"
+
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        app:layout_constraintVertical_bias="0.0" />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layo2"
+    android:visibility="invisible"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="QUIZ"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="8dp"
+        android:text="'e Hoş Geldiniz"
+
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="12dp"
+        android:background="@layout/rounded_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@layout/rounded_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ŞİFRE"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="VEYA"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/kayitol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignStart="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Kayıt Ol"
+        android:textColor="@color/Black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
